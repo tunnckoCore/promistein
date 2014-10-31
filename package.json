@@ -1,0 +1,39 @@
+{
+  "name": "promistein",
+  "version": "0.0.0",
+  "description": "bramstein/promis (minified version) for nodejs and browser. Packaged for benchmarks. It supports the full Promise API specification.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/promises-aplus-tests adapter.js"
+  },
+  "author": {
+    "name": "Charlike Make Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "https://github.com/tunnckoCore",
+    "twitter": "https://twitter.com/tunnckoCore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tunnckoCore/promistein.git"
+  },
+  "keywords": [
+    "promises aplus",
+    "Promises/A+",
+    "promises",
+    "promise",
+    "promistein",
+    "benchmark",
+    "async compare",
+    "async",
+    "promise benchmark",
+    "benchmark"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "promises-aplus-tests": "*"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/tunnckoCore/promistein/blob/master/license.md"
+  }]
+}
