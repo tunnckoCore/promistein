@@ -1,12 +1,12 @@
 var Promistein = require('./index');
 
 exports.deferred = function () {
-  var resolver = null,
-      rejector = null,
-      promise = new Promistein(function (resolve, reject) {
-        resolver = resolve;
-        rejector = reject;
-      });
+  var resolver = null
+  var rejector = null
+  var promise = new Promistein(function (resolve, reject) {
+    resolver = resolve;
+    rejector = reject;
+  });
 
   return {
     promise: promise,

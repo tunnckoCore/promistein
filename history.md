@@ -1,3 +1,6 @@
+## v0.0.2 / October 31, 2014
+- fix `Error 'require'ing adapter file` on travis
+
 ## v0.0.1 / October 31, 2014
 - initial commit, npm publish
 

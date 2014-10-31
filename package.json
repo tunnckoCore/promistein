@@ -4,7 +4,7 @@
   "description": "bramstein/promis (minified version) for nodejs and browser. Packaged for benchmarks. It supports the full Promise API specification.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/promises-aplus-tests adapter.js"
+    "test": "./node_modules/.bin/promises-aplus-tests ./adapter.js"
   },
   "author": {
     "name": "Charlike Make Reagent",
