@@ -1,3 +1,7 @@
+## v1.0.0 / October 31, 2014
+- build passing
+- first release
+
 ## v0.0.2 / October 31, 2014
 - fix `Error 'require'ing adapter file` on travis
 

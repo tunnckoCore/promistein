@@ -1,4 +1,4 @@
-(function(root) {
+(function(global) {
     'use strict';
 
     function f(a) {
@@ -123,12 +123,12 @@
     Promistein.prototype.then = Promistein.prototype.c,
     Promistein.prototype["catch"] = Promistein.prototype.e
 
-    /* expose this module */
-    if(module && module.exports) {
-      module.exports = Promistein
+    if (typeof define === 'function' && define.amd) {
+      define(Promistein);
+    } else if (typeof exports === 'object') {
+      module.exports = Promistein;
+    } else {
+      global.Promistein = Promistein;
     }
-    else if(typeof define ==='function' && define.amd) define(Promistein);
-    else {
-      root.Promistein = Promistein;
-    }
-}(this));
+})(this);
+
