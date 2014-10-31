@@ -114,10 +114,26 @@
             for (var c = 0; c < a.length; c += 1) a[c].c(b, d)
         })
     };
-    
-    var Promistein = Promise;
+
     /* expose this module */
-    if(module && module.exports) module.exports = Promistein;
+    if(module && module.exports) {
+      module.exports.Promise = f;
+      module.exports.Promise.resolve = p, 
+      module.exports.Promise.reject = n, 
+      module.exports.Promise.race = s, 
+      module.exports.Promise.all = r, 
+      module.exports.Promise.prototype.then = f.prototype.c,
+      module.exports.Promise.prototype["catch"] = f.prototype.e
+    }
     else if(typeof define ==='function' && define.amd) define(Promistein);
-    else root.Promistein = Promistein
+    else {
+      window.Promistein = f
+      window.Promise = f;
+      window.Promise.resolve = p, 
+      window.Promise.reject = n, 
+      window.Promise.race = s, 
+      window.Promise.all = r, 
+      window.Promise.prototype.then = f.prototype.c,
+      window.Promise.prototype["catch"] = f.prototype.e
+    }
 }());
